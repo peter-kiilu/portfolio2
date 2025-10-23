@@ -1,11 +1,12 @@
 import React from 'react';
+import photo from '../assets/photo.jpg';
+
 
 const About: React.FC = () => {
   const skills = [
     'JavaScript (ES6+)',
     'TypeScript',
     'React',
-    'Vue.js',
     'Node.js',
     'Python',
     'Java',
@@ -24,7 +25,7 @@ const About: React.FC = () => {
         <div className="flex flex-col lg:grid lg:grid-cols-3 gap-8 lg:gap-12">
           <div className="lg:col-span-2">
             <p className="text-slate mb-4 text-sm lg:text-base">
-              Hello! I'm Musila, a software engineer based in Nairobi, Kenya. 
+              Hello! I'm Musila, a software engineer based in Embu, Kenya. 
               I enjoy creating things that live on the internet, whether that 
               be websites, applications, or anything in between.
             </p>
@@ -44,13 +45,10 @@ const About: React.FC = () => {
                 </div>
               ))}
             </div>
-          </div>
-          
+          </div>          
           <div className="relative group order-first lg:order-last">
-            <div className="w-full h-64 lg:h-80 bg-primary/20 rounded-lg overflow-hidden mx-auto max-w-sm">
-              <div className="w-full h-full bg-gray-400 flex items-center justify-center">
-                <span className="text-slate">Your Photo</span>
-              </div>
+            <div className="relative w-full h-64 lg:h-80 bg-primary/20 rounded-lg overflow-hidden mx-auto max-w-sm">
+             <img src={photo} alt="Preview" className="w-full h-full object-cover" />
             </div>
             <div className="absolute inset-0 border-2 border-primary rounded-lg translate-x-4 translate-y-4 -z-10 group-hover:translate-x-3 group-hover:translate-y-3 transition-transform hidden lg:block"></div>
           </div>

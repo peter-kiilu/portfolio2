@@ -5,9 +5,9 @@ const Experience: React.FC = () => {
 
   const experiences = [
     {
-      company: 'Upstatement',
-      position: 'Engineer',
-      period: 'May 2018 - Present',
+      company: 'MarketForce',
+      position: 'Interim Engineer',
+      period: 'May 2024 - Sept 2024',
       description: [
         'Write modern, performant, maintainable code for a diverse array of client and internal projects',
         'Work with a variety of different languages, platforms, frameworks, and content management systems such as JavaScript, TypeScript, React, Vue, Node.js, WordPress, and Netlify',
@@ -15,7 +15,7 @@ const Experience: React.FC = () => {
       ],
     },
     {
-      company: 'Apple',
+      company: 'Remote',
       position: 'Software Engineer',
       period: 'Jan 2017 - Apr 2018',
       description: [

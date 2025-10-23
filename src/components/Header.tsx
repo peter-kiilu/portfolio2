@@ -3,17 +3,16 @@ import React, { useState, useEffect } from 'react';
 const Header: React.FC = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [isResumeOpen, setIsResumeOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
       if (window.innerWidth >= 1024) {
-        // Desktop: check right container scroll
         const rightContainer = document.querySelector('.lg\\:ml-1\\/2');
         if (rightContainer) {
           setIsScrolled((rightContainer as HTMLElement).scrollTop > 100);
         }
       } else {
-        // Mobile: check window scroll
         setIsScrolled(window.scrollY > 100);
       }
     };
@@ -41,13 +40,22 @@ const Header: React.FC = () => {
   ];
 
   return (
-    <header className={`fixed top-0 w-full z-50 transition-all duration-300 ${
-      isScrolled ? 'bg-dark/90 backdrop-blur-sm' : 'bg-transparent'
-    }`}>
+    <header
+      className={`fixed top-0 w-full z-50 transition-all duration-300 ${
+        isScrolled ? 'bg-dark/90 backdrop-blur-sm' : 'bg-transparent'
+      }`}
+    >
       <nav className="max-w-7xl mx-auto px-6 py-4">
         <div className="flex justify-between items-center">
-          <a href="#" className="text-primary font-mono text-xl">MP</a>
-          
+          {/* Logo */}
+          <a href="#" className="flex items-center">
+            <img
+              src="/logo1.png"
+              alt="Logo"
+              className="w-8 h-8 object-contain"
+            />
+          </a>
+
           {/* Desktop Navigation */}
           <ul className="hidden lg:flex space-x-8">
             {navItems.map((item, index) => (
@@ -64,33 +72,48 @@ const Header: React.FC = () => {
 
           {/* Mobile Menu Button */}
           <div className="lg:hidden flex items-center space-x-4">
-            <a
-              href="/resume.pdf"
+            <button
+              onClick={() => setIsResumeOpen(true)}
               className="border border-primary text-primary px-3 py-1 rounded font-mono text-sm hover:bg-primary/10 transition-colors"
             >
               Resume
-            </a>
+            </button>
             <button
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
               className="text-secondary hover:text-primary transition-colors"
             >
-              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg
+                className="w-6 h-6"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
                 {isMobileMenuOpen ? (
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M6 18L18 6M6 6l12 12"
+                  />
                 ) : (
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M4 6h16M4 12h16M4 18h16"
+                  />
                 )}
               </svg>
             </button>
           </div>
 
           {/* Desktop Resume Button */}
-          <a
-            href="/resume.pdf"
+          <button
+            onClick={() => setIsResumeOpen(true)}
             className="hidden lg:block border border-primary text-primary px-4 py-2 rounded font-mono text-sm hover:bg-primary/10 transition-colors"
           >
             Resume
-          </a>
+          </button>
         </div>
 
         {/* Mobile Menu */}
@@ -104,7 +127,8 @@ const Header: React.FC = () => {
                     onClick={() => setIsMobileMenuOpen(false)}
                     className="block text-lg font-mono text-secondary hover:text-primary transition-colors py-2"
                   >
-                    <span className="text-primary">0{index + 1}.</span> {item.name}
+                    <span className="text-primary">0{index + 1}.</span>{' '}
+                    {item.name}
                   </a>
                 </li>
               ))}
@@ -112,6 +136,25 @@ const Header: React.FC = () => {
           </div>
         )}
       </nav>
+
+      {/* Resume Modal */}
+      {isResumeOpen && (
+        <div className="fixed inset-0 bg-black/80 backdrop-blur-sm flex items-center justify-center z-[100]">
+          <div className="relative bg-dark rounded-lg w-[90%] lg:w-[60%] h-[80%] overflow-hidden shadow-xl">
+            <button
+              onClick={() => setIsResumeOpen(false)}
+              className="absolute top-3 right-3 text-white hover:text-primary"
+            >
+              ✕
+            </button>
+            <iframe
+              src="/resume.pdf#toolbar=0&navpanes=0&scrollbar=0"
+              className="w-full h-full"
+              title="Resume PDF"
+            ></iframe>
+          </div>
+        </div>
+      )}
     </header>
   );
 };
