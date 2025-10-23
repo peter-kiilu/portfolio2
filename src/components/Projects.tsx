@@ -14,12 +14,12 @@ const Projects: React.FC = () => {
     },
     {
       id: 2,
-      title: 'Club Website',
-      description: 'A website built for University CIT Club.',
-      tech: ['React', 'Styled Components', 'MongoDB'],
+      title: 'AI-powered fortune predictions',
+      description: 'A cyberpunk casino where you bet fake crypto on AI-powered fortune predictions for markets, coins & events — blending real data, neon aesthetics, and eerie AI vibes..',
+      tech: ['React', 'TailwindCSS', 'Supabase', 'OpenAI API', 'Vercel'],
       github: 'https://github.com/peter-kiilu',
-      live: 'https://younginnovators.vercel.app/',
-      image: '/WebsitePic.jpg', // 
+      live: 'https://oracle-fortune.vercel.app/',
+      image: '/orac.png', // 
     },
   ];
 
