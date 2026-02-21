@@ -13,7 +13,7 @@ const Contact: React.FC = () => {
         </p>
         <div className="text-center lg:text-left">
           <a
-            href="mailto:hello@example.com"
+            href="mailto:musiladev@gmail.com"
             className="border border-primary text-primary px-6 lg:px-8 py-3 lg:py-4 rounded font-mono text-sm hover:bg-primary/10 transition-colors inline-block"
           >
             Say Hello
