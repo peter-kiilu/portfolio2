@@ -25,13 +25,11 @@ const About: React.FC = () => {
         <div className="flex flex-col lg:grid lg:grid-cols-3 gap-8 lg:gap-12">
           <div className="lg:col-span-2">
             <p className="text-slate mb-4 text-sm lg:text-base">
-              Hello! I'm Musila, a software engineer based in Embu, Kenya. 
-              I enjoy creating things that live on the internet, whether that 
-              be websites, applications, or anything in between.
+              Musila is a Software Engineer building intelligent, scalable digital systems that solve meaningful, real-world problems. With expertise across full-stack development, AI integration, and data-driven engineering, he designs solutions that move beyond functionality — delivering performance, clarity, and measurable business value.
             </p>
             <p className="text-slate mb-4 text-sm lg:text-base">
-              I have a passion for building scalable, maintainable software 
-              and love working with modern technologies.
+              In an era where organizations struggle with inefficiencies, fragmented systems, and underutilized data, Musila architects technology that transforms complexity into structured, automated, and insight-driven workflows. From AI-powered applications to robust web platforms, his work focuses on scalability, maintainability, and long-term impact.He understands the pain points modern businesses face — slow processes, poor data visibility, disconnected tools, and growth bottlenecks — and builds systems that streamline operations, unlock actionable insights, and create sustainable competitive advantage.
+              Driven by purposeful innovation, Musila leverages technology not just to build products, but to enable smarter decisions, stronger organizations, and meaningful progress in the digital economy.
             </p>
             <p className="text-slate mb-6 lg:mb-8 text-sm lg:text-base">
               Here are a few technologies I've been working with recently:
