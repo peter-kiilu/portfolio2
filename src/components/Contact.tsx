@@ -13,7 +13,9 @@ const Contact: React.FC = () => {
         </p>
         <div className="text-center lg:text-left">
           <a
-            href="mailto:musiladev@gmail.com"
+            href="https://mail.google.com/mail/?view=cm&to=musiladev@gmail.com"
+            target="_blank"
+            rel="noopener noreferrer"
             className="border border-primary text-primary px-6 lg:px-8 py-3 lg:py-4 rounded font-mono text-sm hover:bg-primary/10 transition-colors inline-block"
           >
             Say Hello
