@@ -5,6 +5,16 @@ const Experience: React.FC = () => {
 
   const experiences = [
     {
+      company: 'University of Embu',
+      position: 'ICT Support Officer',
+      period: 'May 2025 - August 2025',
+      description: [
+        'Managed critical ICT infrastructure, providing system maintenance and advanced network troubleshooting',
+        'Streamlined software installation and hardware configuration protocols to ensure 99.9% operational uptime',
+        'Resolved high-priority technical issues for staff and students, facilitating smooth day-to-day campus operations',
+      ],
+    },
+    {
       company: 'MarketForce',
       position: 'Interim Engineer',
       period: 'May 2024 - Sept 2024',
