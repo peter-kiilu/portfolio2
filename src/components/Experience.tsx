@@ -29,8 +29,9 @@ const Experience: React.FC = () => {
       position: 'Software Engineer',
       period: 'Jan 2017 - Apr 2018',
       description: [
-        'Developed and maintained code for in-house and client websites primarily using HTML, CSS, Sass, JavaScript, and jQuery',
-        'Interfaced with clients on a weekly basis, providing technological expertise',
+        'Built a full-stack web application using React for the frontend and FastAPI (Python) for the backend, delivering a responsive and high-performance user experience',
+        'Designed and optimized PostgreSQL database schemas, queries, and migrations to support scalable data management',
+        'Developed RESTful APIs with FastAPI, implementing authentication, data validation, and seamless integration with the React frontend',
       ],
     },
   ];
