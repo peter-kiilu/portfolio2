@@ -6,20 +6,20 @@ const Projects: React.FC = () => {
     {
       id: 1,
       title: 'MindFul Gen',
-      description: 'A Nextjs app focused on mental health and mindfulness.',
-      tech: ['VS Code', 'Postman', 'Nextjs', 'TailwindCSS', 'Firebase'],
+      description: 'A full-stack mental health platform built with Next.js and Firebase, featuring real-time mood tracking, guided meditation sessions, and personalized wellness insights. Implements server-side rendering for SEO optimization, Firebase Auth for secure user sessions, and Firestore for real-time data sync across devices. Designed with an accessible, calming UI using TailwindCSS with custom theme tokens.',
+      tech: ['Next.js', 'TailwindCSS', 'Firebase Auth', 'Firestore', 'Vercel'],
       github: 'https://github.com/peter-kiilu',
       live: 'https://mindful-gen.vercel.app/',
       image: '/MindfulPic.png', 
     },
     {
       id: 2,
-      title: 'AI-powered fortune predictions',
-      description: 'A cyberpunk casino where you bet fake crypto on AI-powered fortune predictions for markets, coins & events — blending real data, neon aesthetics, and eerie AI vibes..',
+      title: 'Oracle Fortune — AI Prediction Engine',
+      description: 'A cyberpunk-themed prediction platform that integrates OpenAI\'s GPT API with real-time market data to generate AI-driven forecasts on crypto, stocks, and global events. Built with React and Supabase for real-time state management and PostgreSQL-backed persistence. Features include a virtual currency betting system, streamed AI responses for low-latency UX, and row-level security via Supabase policies for multi-user isolation.',
       tech: ['React', 'TailwindCSS', 'Supabase', 'OpenAI API', 'Vercel'],
       github: 'https://github.com/peter-kiilu',
       live: 'https://oracle-fortune.vercel.app/',
-      image: '/orac.png', // 
+      image: '/orac.png',
     },
   ];
 
