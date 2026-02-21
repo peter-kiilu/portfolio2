@@ -20,7 +20,7 @@ const Experience: React.FC = () => {
       period: 'May 2024 - Sept 2024',
       description: [
         'Shipped 5+ client-facing features in React and TypeScript, improving user engagement metrics by 25% across MarketForce\'s B2B distribution platform',
-        'Spearheaded migration of legacy jQuery components to Vue.js, reducing page load times by 35% and cutting frontend bug reports in half',
+        'Spearheaded migration of legacy jQuery components to React.js, reducing page load times by 35% and cutting frontend bug reports in half',
         'Collaborated daily with a cross-functional team of 8 engineers, 2 designers, and product managers to deliver sprint goals consistently ahead of schedule',
       ],
     },
