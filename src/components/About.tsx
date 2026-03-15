@@ -25,7 +25,7 @@ const About: React.FC = () => {
         <div className="flex flex-col lg:grid lg:grid-cols-3 gap-8 lg:gap-12">
           <div className="lg:col-span-2">
             <p className="text-slate mb-4 text-sm lg:text-base">
-              Musila is a Software Engineer specializing in intelligent, scalable digital systems that solve real-world business challenges. With expertise in full-stack development, AI integration, and data-driven engineering, he builds solutions that streamline operations, unlock insights, and drive measurable growth.
+              Musila is a Junior Software Engineer specializing in intelligent, scalable digital systems that solve real-world business challenges. With expertise in full-stack development, AI integration, and data-driven engineering, he builds solutions that streamline operations, unlock insights, and drive measurable growth.
             </p>
             <p className="text-slate mb-4 text-sm lg:text-base">
               Focused on transforming complexity into efficient, automated systems, his work enables organizations to make smarter decisions, scale sustainably, and create meaningful impact in the digital economy
