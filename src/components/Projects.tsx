@@ -19,7 +19,7 @@ const Projects: React.FC = () => {
       tech: ['React', 'FastAPI', 'PostgreSQL', 'TailwindCSS', 'Supabase', 'PWA', 'IndexedDB', 'Vercel'],
       github: 'https://github.com/peter-kiilu',
       live: 'https://me-inventory.vercel.app/',
-      image: 'cool.png',
+      image: '/cool.png',
     },
   ];
 
