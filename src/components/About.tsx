@@ -4,13 +4,10 @@ import photo from '../assets/photo.jpg';
 const About: React.FC = () => {
   const skills = [
     'JavaScript (ES6+)',
-    'Express.js',
-    'React',
-    'Node.js',
+    'React Native',
     'Python',
-    'HTML/CSS',
-    'MongoDB',
-    'TypeScript'    
+    'MongoDB', 
+    'Docker',   
   ];
 
   return (
