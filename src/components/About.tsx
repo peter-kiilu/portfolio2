@@ -1,7 +1,6 @@
 import React from 'react';
 import photo from '../assets/photo.jpg';
 
-
 const About: React.FC = () => {
   const skills = [
     'JavaScript (ES6+)',
