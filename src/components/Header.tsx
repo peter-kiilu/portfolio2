@@ -5,6 +5,10 @@ const Header: React.FC = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isResumeOpen, setIsResumeOpen] = useState(false);
 
+  const resumeFileName = 'PETER MUSILA  - CV.pdf';
+  const resumePath = `/${encodeURI(resumeFileName)}`;
+  const resumeViewerUrl = `${window.location.origin}${resumePath}#toolbar=0&navpanes=0&scrollbar=0`;
+
   useEffect(() => {
     const handleScroll = () => {
       if (window.innerWidth >= 1024) {
@@ -147,8 +151,19 @@ const Header: React.FC = () => {
             >
               ✕
             </button>
+            <div className="absolute top-3 left-3 z-10">
+              <a
+                href={resumePath}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-sm font-mono border border-primary text-primary px-3 py-1 rounded hover:bg-primary/10"
+                download
+              >
+                Open/Download CV
+              </a>
+            </div>
             <iframe
-              src={`${window.location.origin}/PETER MUSILA - CV.pdf#toolbar=0&navpanes=0&scrollbar=0`}
+              src={resumeViewerUrl}
               className="w-full h-full"
               title="Resume PDF"
             />
